@@ -12,11 +12,12 @@
 <body>
 	<div class="jumbotron text-center">
 	  <h1>Greeting UI</h1>
-	  <p>Added</p> 
+	  <p>UI for adding, updating and deleting greetings as part of Labforward Code Challenge for Backend Engineer Candidate.</p>
+	  <p>Have fun!</p>
 	</div>
   
 	<div class="container">
- 		  <button id="createbtn"  type="button" class="btn btn-success">Create New Greeting</button>
+ 		  <button id="createbtn"  type="button" class="btn btn-success">Create Greeting</button>
  		  <table class="table table-striped">
 			<thead>
 			  <tr>
@@ -65,8 +66,8 @@ getTableRaw=function(message){
 	  return '<tr>'+
 		'<td>'+message.id+'</td>'+
 		'<td>'+message.message+'</td>'+
-		'<td><button type="button" class="btn btn-warning"  onclick="updateMessage(\''+message.id+'\')">Update</button></td>'+
-		'<td><button type="button" class="btn btn-danger" onclick="deleteMessage(\''+message.id+'\')">Delete</button></td>'+
+		'<td><button type="button" class="btn btn-warning"  onclick="updateMessage(\''+message.id+'\')">Update Greeting</button></td>'+
+		'<td><button type="button" class="btn btn-danger" onclick="deleteMessage(\''+message.id+'\')">Delete Greeting</button></td>'+
 	  '</tr>';
 }
 
